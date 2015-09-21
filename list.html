@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  charset="utf-8">
+		<meta name="viewport" content="width=device-width, maximum-scale=1, target-densityDPI=device-dpi">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" >
+		<meta name="format-detection" content="telephone=no">
+		<title>burbank</title>
+		<link rel="stylesheet" type="text/css" media="all" href="css/main.css">
+		<link rel="stylesheet" href="css/style768.css" media="only screen and (min-width: 480px) and (max-width: 768px)">
+		<link rel="stylesheet" href="css/style480.css" media="only screen and (max-width: 480px)">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+		<script type="text/javascript" src="js/jcarousel.basic.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script>
+		$(function() {
+			$( "#accordion" ).accordion();
+		});
+		</script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+		});
+						$(window).resize(function(){
+			var w = $(window).width();
+			if(w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div class="wrap">
+					<div class="top">
+						<form action="#">
+							<fieldset>
+								<div class="search">
+									<input
+									onblur="this.value=(this.value=='')?this.title:this.value;"
+									onfocus="this.value=(this.value==this.title)?'':this.value;"
+									value="search"
+									title="search"
+									type="search"/>
+									<input type="submit" value="">
+								</div>
+							</fieldset>
+						</form>
+						<ul class="sprites">
+							<li><a href="#" class="facebook"></a></li>
+							<li><a href="#" class="twitter"></a></li>
+						</ul>
+						<ul class="nav-header">
+							<li><a href="#">Plan Your Trip</a></li>
+							<li><a href="#">Plan a Meeting</a></li>
+						</ul>
+					</div>
+					<nav>
+						<ul class="menu">
+							<li>
+								<a href="#">WHAT TO DO</a>
+								<div class="drop">
+									<img src="img/drop_img.jpg" alt="#">
+									<ul>
+										<li><a href="">Studio tours &amp; tv tapings</a></li>
+										<li><a href="">shopping</a></li>
+										<li><a href="">food &amp; drinks</a></li>
+										<li><a href="">hotels</a></li>
+										<li><a href="">arts &amp; culture</a></li>
+										<li><a href="">parks &amp; recreation</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">Where to Stay</a></li>
+							<li><a href="#">Trip Ideas</a></li>
+						</ul>
+						<div class="book">
+							<a href="#">BOOK YOUR TRIP</a>
+							<div class="drop_trip">
+								<ul>
+									<li><a href="#" class="book_trip">BOOK YOUR TRIP</a></li>
+									<li><a href="#">Check in</a></li>
+									<li><a href="#">Check out</a></li>
+									<li><a href="#" class="search">search</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<a href="index.html" class="logo">burbank</a>
+				<nav class="clearfix">
+					<ul class="clearfix">
+						<li><a href="#">WHAT TO DO</a></li>
+						<li><a href="#">Where to Stay</a></li>
+						<li><a href="#">Trip Ideas</a></li>
+						<li><a href="#">BOOK YOUR TRIP</a></li>
+					</ul>
+					<a href="#" id="pull">Menu</a>
+				</nav>
+			</header>
+			<div class="list-bg">
+				<div class="list-wr">
+					<ul class="mini-nav">
+						<li><a href="">Home</a></li>
+						<li><a href="">What to do</a></li>
+						<li><a href="" class="active">studio tours and tv tapings</a></li>
+					</ul>
+					<div class="sidebar">
+						<h2>Studio Tours &amp; TV Tapings</h2>
+						<ul class="bar">
+							<li><a href="">Shopping</a></li>
+							<li><a href="">Food &amp; Drink</a></li>
+							<li><a href="">Hotels</a></li>
+							<li><a href="">Arts &amp; Culture</a></li>
+							<li><a href="">Parks &amp; Recreation</a></li>
+						</ul>
+					</div>
+					<div class="content">
+						<h1>Studio tours &amp; TV tapings</h1>
+						<div class="trips">
+							<div class="img-wr">
+								<a href=""><img src="img/01.jpg" alt="" width="180" height="113"></a>
+							</div>
+							<div class="right">
+								<h3>Warner Bros VIP Tour</h3>
+								<p>Go behind the scenes of your favorite shows and movies! Tha knows bobbar wacken thi sen up tha what shu thi gob will eckerslike.</p>
+								<a href="" class="more">view</a>
+							</div>
+						</div>
+						<div class="trips">
+							<div class="img-wr">
+								<a href="">
+								<img src="img/02.jpg" alt="" width="180" height="113">
+							</a>
+							</div>
+							<div class="right">
+								<h3>Universal Studios</h3>
+								<p>Go behind the scenes of your favorite shows and movies! Tha knows bobbar wacken thi sen up tha what shu thi gob will eckerslike.</p>
+								<a href="" class="more">view</a>
+							</div>
+						</div>
+						<div class="trips">
+							<div class="img-wr">
+								<a href="">
+								<img src="img/03.jpg" alt="" width="180" height="113">
+							</a>
+							</div>
+							<div class="right">
+								<h3>NBC studio tour</h3>
+								<p>Go behind the scenes of your favorite shows and movies! Tha knows bobbar wacken thi sen up tha what shu thi gob will eckerslike.</p>
+								<a href="" class="more">view</a>
+							</div>
+						</div>
+						<div class="trips">
+							<div class="img-wr">
+								<a href="">
+								<img src="img/04.jpg" alt="" width="180" height="113">
+							</a>
+							</div>
+							<div class="right attraction">
+								<h3>Attraction Name</h3>
+								<p>Go behind the scenes of your favorite shows and movies! Tha knows bobbar wacken thi sen up tha what shu thi gob will eckerslike.</p>
+								<a href="" class="more">view</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="footer_top">
+					<ul class="sponsor_logos">
+						<li><a href=""><img src="img/bob_logo.jpg" alt="" ></a></li>
+						<li><a href=""><img src="img/downtown_logo.jpg" alt=""></a></li>
+						<li><a href=""><img src="img/city_logo.jpg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="footer768">
+					<ul class="sponsor_logos">
+						<li><a href=""><img src="img/city_logo.jpg" alt=""></a></li>
+						<li><a href=""><img src="img/bob_logo.jpg" alt=""></a></li>
+						<li><a href=""><img src="img/downtown_logo.jpg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="site_map">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="">What to do</a></li>
+						<hr>
+						<li class="no-cont"><a href="#">Where to stay</a></li>
+						<li><a href="#">Trip ideas</a></li>
+						<li><a href="#">Plan your trip</a></li>
+						<li><a href="#">Plan a meeting</a></li>
+						<li><a href="#">Privacy policy</a></li>
+					</ul>
+				</div>
+				<span>&copy; 2013 Visit Burbank / Burbank Hospitality Association. All Rights Reserved.</span>
+			</footer>
+			<div class="violet_line">
+				<div class="hold">
+					<div class="left">
+						<h2>LETS CONNECT</h2>
+						<ul  class="sprites">
+							<li><a href="" class="facebook">facebook</a></li>
+							<li><a href="" class="instagram">instagram</a></li>
+							<li><a href="" class="youtobe">youtobe</a></li>
+							<li><a href="" class="pinterest">pinterest</a></li>
+							<li><a href="" class="google_plus">google_plus</a></li>
+							<li><a href="" class="owl">owl</a></li>
+						</ul>
+					</div>
+					<div class="book">
+						<a href="#">BOOK YOUR TRIP</a>
+						<div class="drop_trip">
+								<ul>
+								<li><a href="" class="book_trip">BOOK YOUR TRIP</a></li>
+								<li><a href="">Check in</a></li>
+								<li><a href="">Check out</a></li>
+								<li><a href="" class="search">search</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

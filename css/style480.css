@@ -1,0 +1,113 @@
+#wrapper, .jcarousel-wrapper, .jcarousel-first-wrapper,
+.violet_line, .grey, .section, .violet_line .hold, .left-col, .list-wr {width: 480px;}
+.wrap, .lights_and_gradient, .right-col, .violet_line {display: none;}
+header {
+  background-position: 0 0;
+  margin: 0 0 6px 0;
+   background: -webkit-linear-gradient(top, #412953, #412953) no-repeat;
+  background: -moz-linear-gradient(top, #412953, #412953) no-repeat;
+  background: -ms-linear-gradient(top, #412953, #412953) no-repeat;
+  background: -o-linear-gradient(top, #412953, #412953) no-repeat;
+  background-size: 100% 51px;
+  background-position: 0 0;
+}
+.logo {
+  float: left;
+  margin: 0 0 0 15px;
+}
+.clearfix {
+  display: block;
+  height: 40px;
+  width: 100%;
+  font-weight: bold;
+  position: relative;
+}
+.clearfix ul {
+  width: 100%;
+  background: #662d91;
+}
+.clearfix li {
+  display: inline;
+  float: left;
+  width: 100%;
+  background: transparent;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix a {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  line-height: 40px;
+}
+.clearfix ul {
+  display: none;
+  height: auto;
+}
+.clearfix a#pull {
+  display: block;
+  position: absolute;
+  width: 110px;
+  height: 51px;
+  right: 0;
+  float: right;
+  background: #662d91;
+  padding: 0 0 0 51px;
+  font: 21px/51px 'agendamedium', arial, sans-serif;
+  text-transform: uppercase;
+}
+.jcarousel-small-wrapper {
+  width: 409px !important;
+  position: relative;
+  margin: 0 auto;
+}
+.jcarousel-first-wrapper li {overflow: hidden;}
+.jcarousel-first-wrapper li img {margin: 0 0 0 -325px;}
+footer {text-align: left;}
+.footer768 {
+	display: block;
+	width: 100%;
+	float: left;
+}
+.sponsor_logos li:first-child a {float: none;}
+.sponsor_logos li:first-child a img {
+	width: 55px;
+	height: 59px;
+}
+.sponsor_logos li:last-child a img {
+	width: 162px;
+	height: 62px;
+}
+.sponsor_logos li:nth-child(2) a img {
+	width: 68px;
+	height: 64px;
+}
+.footer_top {display: none;}
+.footer768 {padding: 17px 0 21px 0;}
+.footer768 .sponsor_logos li {margin: 0 24px;}
+.site_map {
+  width: 480px;
+  float: left;
+  padding: 4px 0 0 0;
+}
+footer .site_map ul li:last-child {display: none;}
+.content {width: 480px;}
+.sidebar {
+  width: 448px;
+  margin: 0 auto;
+  float: none;
+}
+.trips .right {
+    float: none;
+    text-align: center;
+    margin: 0 20px;
+    padding-bottom: 20px;
+}
+.trips .img-wr {float: none;}
+.img-wr img {
+  width: 320px;
+  height: 170px;
+  margin: auto;
+}
