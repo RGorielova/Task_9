@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  charset="utf-8">
+		<meta name="viewport" content="width=device-width, maximum-scale=1">
+		<title>burbank</title>
+		<link rel="stylesheet" type="text/css" media="all" href="css/main.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+		<script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script>
+		$(function() {
+			$( "#accordion" ).accordion();
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+		});
+		</script>
+
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('.menu');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+		$(window).resize(function(){
+			var w = $(window).width();
+			if(w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+		});
+		</script>
+</head>
+
+
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="header-top">
+				<div class="search">
+					<input onblur="this.value=(this.value=='')?this.title:this.value;" onfocus="this.value=(this.value==this.title)?'':this.value;" value="search" title="search" type="search"/>
+					<input type="submit" value="">
+				</div>
+				<ul class="social">
+					<li><a href="#" class="facebook"></a></li>
+					<li><a href="#" class="twitter"></a></li>
+				</ul>
+				<ul class="plan">
+					<li><a href="#">Plan Your Trip</a></li>
+					<li><a href="#">Plan a Meeting</a></li>
+				</ul>
+			</div>
+			<div class="header-main">
+				<div class="header-main-wrap">
+				<a href="#" id="pull">Menu</a>
+				<a href="index.html" class="logo">burbank</a>
+				<nav>
+					<ul class="menu">
+						<li>
+							<a href="#" class="active">WHAT TO DO</a>
+							<div class="drop">
+								<img src="img/drop_img.jpg" alt="#">
+								<ul>
+									<li><a href="#">Studio tours &amp; tv tapings</a></li>
+									<li><a href="#">shopping</a></li>
+									<li><a href="#">food &amp; drinks</a></li>
+									<li><a href="#">hotels</a></li>
+									<li><a href="#">arts &amp; culture</a></li>
+									<li><a href="#">parks &amp; recreation</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">Where to Stay</a></li>
+						<li><a href="#">Trip Ideas</a></li>
+						<li class="book-trip">
+							<a href="#" class="book">BOOK YOUR TRIP</a>
+							<div class="drop-book">
+								<ul>
+									<li><a href="#">Check in</a></li>
+									<li><a href="#">Check out</a></li>
+									<li><a href="#" class="book-search">search</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				</div>
+			</div>
+		</header>
+		<div class="what-to-do-bg">
+			<div class="list-moved">
+				<div class="sidebar">
+					<ul>
+						<li><a href="" >Studio Tours &amp; TV Tapings</a></li>
+						<li><a href="">Shopping</a></li>
+						<li><a href="">Food &amp; Drink</a></li>
+						<li><a href="">Hotels</a></li>
+						<li><a href="">Arts &amp; Culture</a></li>
+						<li><a href="">Parks &amp; Recreation</a></li>
+					</ul>
+					<div class="viol-rectangle">
+						<p class="up-case">TRIP IDEA</p>
+						<p class="name">Be an Industry Insider</p>
+						<p>See how the movies are made and watch for your favorite stars!</p>
+						<p><a href="#">view this itinerary</a></p>
+					</div>
+					<div class="viol-rectangle">
+						<p class="up-case">SPECIAL EVENT</p>
+						<p class="name">Chris Brown &amp; Warner Bros</p>
+						<p>SMagna enim accumesen eu blan loreme ipsum argh set folia.</p>
+						<a href="#">view this event</a>
+					</div>
+					<div class="viol-rectangle">
+						<p class="up-case">featured hotel</p>
+						<p class="name">marriott hotel</p>
+						<p>2500 North Hollywood Way <br>Burbank, CA 91505 <br>(818) 843-6000</p>
+						<a href="#">view this hotel</a>
+					</div>
+				</div>
+				<div class="content">
+					<h1>What <span> to do</span></h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea adipisci illum aspernatur placeat. Asperiores perspiciatis, labore animi odio, ea dicta consectetur. Soluta officiis facilis, velit sunt rem odio a vel. </p>
+					<div class="what-gal">
+						<ul>
+							<li>
+								<a href="" class="img-wr"><img src="img/01.jpg" alt="" width="320" height="170"></a>
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis tempore ducimus dolor numquam, in minus officia ab iste laboriosam id illo delectus perspiciatis soluta voluptate, dolore officiis, libero repellat.</p>
+								<p><a href="#" class="more">view</a></p>
+							</li>
+							<li>
+								<a href="" class="img-wr"><img src="img/01.jpg" alt="" width="320" height="170"></a>
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis tempore ducimus dolor numquam, in minus officia ab iste laboriosam id illo delectus perspiciatis soluta voluptate, dolore officiis, libero repellat.</p>
+								<p><a href="#" class="more">view</a></p>
+								</li>
+							<li>
+								<a href="" class="img-wr"><img src="img/01.jpg" alt="" width="320" height="170"></a>
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis tempore ducimus dolor numquam, in minus officia ab iste laboriosam id illo delectus perspiciatis soluta voluptate, dolore officiis, libero repellat.</p>
+								<p><a href="#" class="more">view</a></p>
+							</li>
+							<li>
+								<a href="" class="img-wr"><img src="img/01.jpg" alt="" width="320" height="170"></a>
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis tempore ducimus dolor numquam, in minus officia ab iste laboriosam id illo delectus perspiciatis soluta voluptate, dolore officiis, libero repellat.</p>
+								<p><a href="#" class="more">view</a></p>
+							</li>
+							<li>
+								<a href="" class="img-wr"><img src="img/01.jpg" alt="" width="320" height="170"></a>
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis tempore ducimus dolor numquam, in minus officia ab iste laboriosam id illo delectus perspiciatis soluta voluptate, dolore officiis, libero repellat.</p>
+								<p><a href="#" class="more">view</a></p>
+							</li>
+							<li>
+								<a href="" class="img-wr"><img src="img/01.jpg" alt="" width="320" height="170"></a>
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis tempore ducimus dolor numquam, in minus officia ab iste laboriosam id illo delectus perspiciatis soluta voluptate, dolore officiis, libero repellat.</p>
+								<p><a href="#" class="more">view</a></p>
+							</li>
+						</ul>
+					</div>
+
+
+					</div>
+				</div>
+				<div class="trip_ideas">
+				<h3>Featured trip ideas</h3>
+				<div class="trip_info">
+					<div class="trips">
+						<a href=""><img src="img/trip_img_01.jpg" alt="" width="160" height="100"></a>
+							<h3>Delenit augue duis dolore</h3>
+							<p>In hendrerit in vulputate velit esse molestie illum dolore eu, gothica <a href="" class="link">formas humanitatis</a> per seacula.</p>
+							<a href="" class="more">view</a>
+					</div>
+					<div class="trips">
+						<a href="">
+							<img src="img/trip_img_02.jpg" alt="" width="160" height="100">
+						</a>
+							<h3>Delenit augue duis dolore</h3>
+							<p>In hendrerit in vulputate velit esse molestie illum dolore eu, gothica <a href="" class="link">formas humanitatis</a> per seacula.</p>
+							<a href="" class="more">view</a>
+					</div>
+					<div class="trips">
+						<a href="">
+							<img src="img/trip_img_03.jpg" alt="" width="160" height="100">
+						</a>
+							<h3>Tincidunt laoreet dolore magna</h3>
+							<p>Quod ii legunt saepius claritas est etiam processus dynamicus qui sequitur mutationem est.</p>
+							<a href="" class="more">view</a>
+					</div>
+					<div class="trips">
+						<a href="">
+							<img src="img/trip_img_04.jpg" alt="" width="160" height="100">
+						</a>
+							<h3>Tincidunt laoreet dolore magna</h3>
+							<p>Quod ii legunt saepius claritas est etiam processus dynamicus qui sequitur mutationem est.</p>
+							<a href="#" class="more">view</a>
+					</div>
+				</div>
+				<a href="#" class="bottom">See all trip ideas</a>
+			</div>
+			</div>
+		<footer>
+				<div class="footer_top">
+					<ul class="sponsor_logos">
+						<li><a href=""><img src="img/bob_logo.jpg" alt="" ></a></li>
+						<li><a href=""><img src="img/downtown_logo.jpg" alt=""></a></li>
+						<li><a href=""><img src="img/city_logo.jpg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="site_map">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="">What to do</a></li>
+						<li class="no-cont"><a href="#">Where to stay</a></li>
+						<li><a href="#">Trip ideas</a></li>
+						<li><a href="#">Plan your trip</a></li>
+						<li><a href="#">Plan a meeting</a></li>
+						<li><a href="#">Privacy policy</a></li>
+					</ul>
+				</div>
+				<span>&copy; 2013 Visit Burbank / Burbank Hospitality Association. All Rights Reserved.</span>
+			</footer>
+			<div class="violet_line">
+				<div class="hold">
+						<h2>LETS CONNECT</h2>
+						<ul  class="sprites left">
+							<li><a href="" class="facebook">facebook</a></li>
+							<li><a href="" class="instagram">instagram</a></li>
+							<li><a href="" class="youtobe">youtobe</a></li>
+							<li><a href="" class="pinterest">pinterest</a></li>
+							<li><a href="" class="google_plus">google_plus</a></li>
+							<li><a href="" class="owl">owl</a></li>
+						</ul>
+					<div class="book">
+						<a href="#" class="bottom-book">BOOK YOUR TRIP</a>
+						<div class="drop_trip">
+								<ul>
+								<li><a href="" class="book_trip">BOOK YOUR TRIP</a></li>
+								<li><a href="">Check in</a></li>
+								<li><a href="">Check out</a></li>
+								<li><a href="" class="search">search</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

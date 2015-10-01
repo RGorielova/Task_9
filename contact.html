@@ -11,15 +11,6 @@
 		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script>
 		$(function() {
-			$( "#accordion" ).accordion();
-			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
-		});
-		</script>
-
-		<script>
-		$(function() {
 			var pull 		= $('#pull');
 				menu 		= $('.menu');
 				menuHeight	= menu.height();
@@ -36,8 +27,6 @@
 		});
 		</script>
 </head>
-
-
 <body>
 	<div id="wrapper">
 		<header>
@@ -62,7 +51,7 @@
 				<nav>
 					<ul class="menu">
 						<li>
-							<a href="#">WHAT TO DO</a>
+							<a href="#" class="active">WHAT TO DO</a>
 							<div class="drop">
 								<img src="img/drop_img.jpg" alt="#">
 								<ul>
@@ -92,52 +81,74 @@
 				</div>
 			</div>
 		</header>
-			<div class="list-bg">
-				<div class="list-wr">
-					<ul class="mini-nav">
-						<li><a href="">Home</a></li>
-						<li><a href="">What to do</a></li>
-						<li><a href="" class="active">studio tours and tv tapings</a></li>
+		<div class="what-to-do-bg">
+			<div class="list-moved">
+				<div class="sidebar">
+					<ul>
+						<li><a href="" >Newsletter</a></li>
+						<li><a href="">Media E-news</a></li>
 					</ul>
-					<div class="sidebar">
-						<ul>
-							<li><a href="" class="active">Studio Tours &amp; TV Tapings</a></li>
-							<li><a href="">Shopping</a></li>
-							<li><a href="">Food &amp; Drink</a></li>
-							<li><a href="">Hotels</a></li>
-							<li><a href="">Arts &amp; Culture</a></li>
-							<li><a href="">Parks &amp; Recreation</a></li>
-						</ul>
+					<div class="viol-rectangle">
+						<p class="up-case">TRIP IDEA</p>
+						<p class="name">Be an Industry Insider</p>
+						<p>See how the movies are made and watch for your favorite stars!</p>
+						<p><a href="#">view this itinerary</a></p>
 					</div>
-					<div class="content">
-						<h1>Studio tours <span> &amp; TV tapings</span></h1>
-						<div class="trips">
-								<a href="" class="img-wr"><img src="img/01.jpg" alt="" width="180" height="113"></a>
-								<h3>Warner Bros VIP Tour</h3>
-								<p>Go behind the scenes of your favorite shows and movies! Tha knows bobbar wacken thi sen up tha what shu thi gob will eckerslike.</p>
-								<p><a href="" class="more">view</a></p>
-						</div>
-						<div class="trips">
-								<a href="" class="img-wr"><img src="img/02.jpg" alt="" width="180" height="113"></a>
-								<h3>Universal Studios</h3>
-								<p>Go behind the scenes of your favorite shows and movies! Tha knows bobbar wacken thi sen up tha what shu thi gob will eckerslike.</p>
-								<p><a href="" class="more">view</a></p>
-						</div>
-						<div class="trips">
-								<a href="" class="img-wr"><img src="img/03.jpg" alt="" width="180" height="113"></a>
-								<h3>NBC studio tour</h3>
-								<p>Go behind the scenes of your favorite shows and movies! Tha knows bobbar wacken thi sen up tha what shu thi gob will eckerslike.</p>
-								<p><a href="" class="more">view</a></p>
-						</div>
-						<div class="trips">
-								<a href="" class="img-wr"><img src="img/04.jpg" alt="" width="180" height="113"></a>
-								<h3>Attraction Name</h3>
-								<p>Go behind the scenes of your favorite shows and movies! Tha knows bobbar wacken thi sen up tha what shu thi gob will eckerslike.</p>
-								<p><a href="" class="more">view</a></p>
-						</div>
+					<div class="viol-rectangle">
+						<p class="up-case">SPECIAL EVENT</p>
+						<p class="name">Chris Brown &amp; Warner Bros</p>
+						<p>SMagna enim accumesen eu blan loreme ipsum argh set folia.</p>
+						<a href="#">view this event</a>
+					</div>
+					<div class="viol-rectangle">
+						<p class="up-case">featured hotel</p>
+						<p class="name">marriott hotel</p>
+						<p>2500 North Hollywood Way <br>Burbank, CA 91505 <br>(818) 843-6000</p>
+						<a href="#">view this hotel</a>
 					</div>
 				</div>
+				<div class="content">
+					<h1>join the <span> Newsletter</span></h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea adipisci illum aspernatur placeat. Asperiores perspiciatis, labore animi odio, ea dicta consectetur. Soluta officiis facilis, velit sunt rem odio a vel. </p>
+					<form action="#" id="form-contacts" class="form-contacts">
+						<div class="field">
+							<label>First Name</label> <br>
+							<input type="text" placeholder="e.g. John" autocoplete="off">
+						</div>
+						<div class="field">
+							<label>Last Name</label>
+							<input type="text" placeholder="e.g. Doe" autocoplete="off">
+						</div>
+						<div class="field">
+							<label>Email</label>
+							<input type="email" placeholder="e.g. name@burbank.com" autocoplete="off">
+						</div>
+						<div class="field">
+							<label>Confirm Email</label>
+							<input type="email" placeholder="e.g. name@burbank.com" autocoplete="off">
+						</div>
+						<div class="field">
+							<label>Address</label>
+							<input type="text" placeholder="e.g. 123 Burbank Lane" autocoplete="off">
+						</div>
+						<div class="field-small">
+							<label>Zip/Postal code</label>
+							<input type="text" placeholder="e.g. John" autocoplete="off">
+						</div>
+						<div class="field-small">
+							<label>Sate</label>
+							<select form="form-contacts">
+								<option>Sate</option>
+								<option>Washington</option>
+								<option>Virginia</option>
+								<option>New York</option>
+							</select>
+						</div>
+						<input type="submit" value="Submit" class="submit">
+				</form>
+				</div>
 			</div>
+		</div>
 		<footer>
 				<div class="footer_top">
 					<ul class="sponsor_logos">
